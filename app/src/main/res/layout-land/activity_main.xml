@@ -4,11 +4,14 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:padding="@dimen/padding_pantalla"
-    android:weightSum="1">
-<Space
-    android:layout_width="0dp"
-    android:layout_height="2dp"
-    android:layout_weight="0.2"/>
+    android:weightSum="1"
+    android:background="@drawable/fondo_imagen">
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_weight="0.2" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,6 +29,7 @@
             android:text="@string/un_jugador" />
 
         <RadioGroup
+            android:id="@+id/rgDificultad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -51,67 +55,67 @@
             android:text="@string/dos_jugadores" />
 
     </LinearLayout>
+
     <Space
         android:layout_width="0dp"
         android:layout_height="2dp"
-        android:layout_weight="0.4"/>
+        android:layout_weight="0.4" />
+
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:columnCount="3"
-        android:rowCount="3"
-        >
+        android:rowCount="3">
 
         <ImageView
             android:id="@+id/ivCasilla1"
             style="@style/casilla"
-            android:background="@color/white"
-            />
+            android:background="@color/white" />
 
         <ImageView
             android:id="@+id/ivCasilla2"
             style="@style/casilla"
-            android:background="@color/white"/>
+            android:background="@color/white" />
 
         <ImageView
             android:id="@+id/ivCasilla3"
             style="@style/casilla"
-            android:src="@drawable/equis"
-            android:background="@color/white"/>
+            android:background="@color/white"
+            android:src="@drawable/equis" />
 
         <ImageView
             android:id="@+id/ivCasilla4"
             style="@style/casilla"
-            android:background="@color/white"/>
+            android:background="@color/white" />
 
         <ImageView
             android:id="@+id/ivCasilla5"
             style="@style/casilla"
-            android:src="@drawable/circulo"
-            android:background="@color/white"/>
+            android:background="@color/white"
+            android:src="@drawable/circulo" />
 
         <ImageView
             android:id="@+id/ivCasilla6"
             style="@style/casilla"
-            android:background="@color/white"/>
+            android:background="@color/white" />
 
         <ImageView
             android:id="@+id/ivCasilla7"
             style="@style/casilla"
-            android:src="@drawable/circulo"
-            android:background="@color/white"/>
+            android:background="@color/white"
+            android:src="@drawable/circulo" />
 
         <ImageView
             android:id="@+id/ivCasilla8"
             style="@style/casilla"
-            android:src="@drawable/equis"
-            android:background="@color/white"/>
+            android:background="@color/white"
+            android:src="@drawable/equis" />
 
         <ImageView
             android:id="@+id/ivCasilla9"
             style="@style/casilla"
-            android:background="@color/white"/>
+            android:background="@color/white" />
     </GridLayout>
 
 
